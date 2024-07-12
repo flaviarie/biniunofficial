@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FAVICON LINK-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--ICONS LINK-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--SWIPER LINK-->
+    <link rel="stylesheet" href="./css files/swiper-bundle.min.css">
+
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>WEB DESIGN FINAL PROJECT FOR LAB - FLAVIANO, ANGEL GAEBRIELLE N.</title>
+</head>
+<body>
+    <!--HEADER-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a class="nav__logo" href="#">
+                <img src="images/logo.png" width="120px" class="logo" alt="logo" />
+            </a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="ri-home-2-fill"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="ri-bard-fill"></i>
+                            <span>About Us</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">
+                            <i class="ri-album-fill"></i>
+                            <span>New Releases</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__actions">
+                <!-- LOGIN -->
+                <i class="ri-user-5-fill login-button" id="login-button"></i>
+            </div>
+        </nav>
+    </header>
+
+     <!-- LOGIN -->
+     <div class="login grid" id="login-content">
+        <form action="" class="login__form">
+            <h3 class="login__title">Hi there Bloom!</h3> <br>
+
+            <div class="login__group grid">
+                <div>
+                    <label for="login-email" class="login__label">Email</label>
+                    <input type="email" placeholder="Input Email" id="login-email" class="login__input">
+                </div>
+
+                <div>
+                    <label for="login-pass" class="login__label">Password</label>
+                    <input type="password" placeholder="Enter password" id="login-pass" class="login__input">
+                </div>
+            </div>
+
+            <div>
+                <span class="login__signup">
+                    You do not have an account? <a href="#">Sign up</a>
+                </span>
+
+                <a href="#" class="login__forgot">
+                    Forgot password?
+                </a>
+
+                <button type="submit" class="login__button button">Log In</button>
+            </div>
+        </form>
+
+        <i class="ri-close-fill login__close" id="login-close"></i>
+        
+     </div>
+
+     <!-- MAIN SECTION -->
+     <main class="main">
+        <!-- HOME SECTION -->
+        <section class="home section" id="home">
+           <!-- <style>
+                body {background-image: url(./images/banner.png);}
+           </style> -->
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Welcome to <br>
+                        Bini's Unofficial Website
+                    </h1>
+
+                    <p class="home__description">
+                        Navigate your way through our top-performing hits, your favourite Bini member, explore and discover never seen before photoshoots and join livestreams by availing the yearly membership (coming soon!)
+                    </p>
+
+                    <a href="https://bini.abs-cbn.com/" class="button">Explore Now!</a>
+                </div>
+
+                <div class="home__images">
+                    <div class="home__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <article class="home__article">
+                                <img src="images/members/bini-about-aiah.png" alt="img" class="home__img">
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <img src="images/members/bini-about-colet.png" alt="img" class="home__img">
+                            </article>
+
+                            <article class="home__article swiper-slide">
+                                <img src="images/members/bini-about-gwen.png" alt="img" class="home__img">
+                            </article>
+                            
+                            <article class="home__article swiper-slide">
+                                <img src="images/members/bini-about-jhoanna.png" alt="img" class="home__img">
+                            </article>
+                            
+                            <article class="home__article swiper-slide">
+                                <img src="images/members/bini-about-maloi.png" alt="img" class="home__img">
+                            </article>
+                            
+                            <article class="home__article swiper-slide">
+                                <img src="images/members/bini-about-mikha.png" alt="img" class="home__img">
+                            </article>
+                            
+                            <article class="home__article swiper-slide">
+                                <img src="images/members/bini-about-sheena.png" alt="img" class="home__img">
+                            </article>
+                            
+                            <article class="home__article swiper-slide">
+                                <img src="images/members/bini-about-stacey.png" alt="img" class="home__img">
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ABOUT BINI -->
+        <section class="about section" id="about">
+           <div class="about__container container grid">
+                <div class="about__data">
+                    <h1 class="about__title section__title">
+                        About Bini
+                    </h1>
+
+                    <p class="about__description">
+                        Filipino pop phenomenon BINI features 8 multi-talented members, Aiah, Colet, Maloi, Gwen, Stacey, Mikha, Jhoanna, and Sheena. 
+                        <br>
+                        The girls have quickly become the biggest female Filipino artist in history, and second biggest artist overall in the Philippines,<br>
+                         holding both the #1 & #2 spots on the top Filipino music charts simultaneously with the hits “Salamin, Salamin” and “Pantropiko.” <br>
+                        <br>
+                        BINI's sound is shaped by homegrown artists and global sensations alike. On the heels of their unprecedented growth in<br>
+                         socials and in streaming listenership (30M +), the girls recently sold out their “BINIverse” tour in record-breaking<br>
+                         time, and have been heralded as one of Teen Vogue's 2024 Girl Groups to watch!
+                    </p>
+                </div>
+
+                <div class="about__images">
+                    <img src="images/about.png" alt="image" class="about__img-1">
+                </div>
+           </div>
+        </section>
+
+        <!-- NEW MUSIC -->
+        <section class="new section" id="new">
+           <h2 class="section__title">
+            New Releases
+           </h2>
+
+           <div class="new__container container">
+                <div class="new__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <a href="https://www.youtube.com/watch?v=UMogVGvhs7U" class="new__card swiper-slide">
+                            <img src="images/feelgood.jpg" alt="album" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Feel Good</h2>
+                                <div class="new__prices">
+                                    <span class="new__platform">Now Available on these Platforms:</span>
+                                </div>
+
+                                <div class="new__socmed">
+                                    <i class="ri-youtube-fill"></i>
+                                    <i class="ri-spotify-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.youtube.com/watch?v=QNV2DmBxChQ" class="new__card swiper-slide">
+                            <img src="images/karera.jpg" alt="album" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Karera</h2>
+                                <div class="new__prices">
+                                    <span class="new__platform">Now Available on these Platforms:</span>
+                                </div>
+
+                                <div class="new__socmed">
+                                    <i class="ri-youtube-fill"></i>
+                                    <i class="ri-spotify-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.youtube.com/watch?v=KyndoXN4_ns" class="new__card swiper-slide">
+                            <img src="images/lagi.jpg" alt="album" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Lagi</h2>
+                                <div class="new__prices">
+                                    <span class="new__platform">Now Available on these Platforms:</span>
+                                </div>
+
+                                <div class="new__socmed">
+                                    <i class="ri-youtube-fill"></i>
+                                    <i class="ri-spotify-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.youtube.com/watch?v=Zx31bB2vMns" class="new__card swiper-slide">
+                            <img src="images/pantropiko.jpg" alt="album" class="new__img">
+
+                            <div>
+                                <h2 class="new__title">Pantropiko</h2>
+                                <div class="new__prices">
+                                    <span class="new__platform">Now Available on these Platforms:</span>
+                                </div>
+
+                                <div class="new__socmed">
+                                    <i class="ri-youtube-fill"></i>
+                                    <i class="ri-spotify-fill"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+           </div>
+        </section>
+
+     <!--==================== FOOTER ====================-->
+     <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/BINIph.official"><i class="ri-facebook-circle-fill"></i></a>
+                <a href="https://www.instagram.com/bini_ph/"><i class="ri-instagram-fill"></i></a>
+                <a href="https://x.com/BINI_ph"><i class="ri-twitter-x-fill"></i></a>
+                <a href="https://www.youtube.com/@BINIPH"><i class="ri-youtube-fill"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul><li><a href="">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">our Team</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p>All Rights Reserved<span class="designer">ANGEL GAEBRIELLE N. FLAVIANO SY 2023-2024</span></p>
+        </div>
+    </footer>
+
+     <!--========== SCROLL UP ==========-->
+     <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-circle-fill"></i>
+     </a>
+
+     <!--=============== SCROLLREVEAL ===============-->
+     <script src=""></script>
+
+     <!--=============== SWIPER JS ===============-->
+     <script src="./js files/swiper-bundle.min.js"></script>
+
+     <!--=============== MAIN JS ===============-->
+     <script src="main.js"></script>
+</body>
+</html>
